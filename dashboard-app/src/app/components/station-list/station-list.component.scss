@@ -1,0 +1,64 @@
+.dashboard {
+  background-color: #f5f2ee;
+  padding: 20px;
+
+  .header {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .metrics {
+    margin-top: 20px;
+
+    .metric-box {
+      background-color: #fbeae3;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      &.total-value { background-color: #fbeae3; }
+      &.total-sales { background-color: #f3f3f3; }
+      &.avg-sales { background-color: #f3f3f3; }
+      &.transaction-count { background-color: #f3f3f3; }
+    }
+  }
+
+  .graph-list-toggle {
+    margin: 20px 0;
+    .btn-toggle {
+      border: none;
+      background: #e3e3e3;
+      &.active {
+        background-color: #ff6d6d;
+        color: white;
+      }
+    }
+  }
+
+  .stations-list {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    .station-item {
+      margin: 10px 0;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+  }
+
+  .graphs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .hourly-sales-chart, .sales-by-station {
+      width: 48%;
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 15px;
+    }
+  }
+}

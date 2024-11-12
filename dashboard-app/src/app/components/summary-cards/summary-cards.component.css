@@ -1,0 +1,17 @@
+.summary-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.summary-card {
+  flex: 1;
+  padding: 20px;
+}
+
+.positive {
+  color: #2ecc71;
+}
+
+.negative {
+  color: #e74c3c;
+}/*# sourceMappingURL=summary-cards.component.css.map */

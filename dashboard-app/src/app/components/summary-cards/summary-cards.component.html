@@ -1,0 +1,12 @@
+<div class="summary-cards">
+    <mat-card *ngFor="let card of summaryData" class="summary-card">
+      <div class="card-content">
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.value }}</p>
+        <span [ngClass]="{'positive': card.change >= 0, 'negative': card.change < 0}">
+          {{ card.change }}%
+        </span>
+      </div>
+    </mat-card>
+  </div>
+  

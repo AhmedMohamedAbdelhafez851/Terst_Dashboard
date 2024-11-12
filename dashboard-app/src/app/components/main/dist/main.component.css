@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container-fluid {
+  background-color: #f9f5f3;
+  width: 100%;
+  height: 1079px;
+  padding: 1rem;
+}
+
+/* Header Section */
+.header-section {
+  background-color: #f4dbd4;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.header-section .monitored-station {
+  display: flex;
+  align-items: center;
+}
+.header-section .monitored-station .station-icon {
+  margin-right: 1rem;
+}
+.header-section .monitored-station .monitored-text,
+.header-section .monitored-station .last-update {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.header-section .last-week-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-section .last-week-group .date-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-section .last-week-group .date-buttons .today-btn {
+  background-color: #ff7f5c;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.header-section .last-week-group .date-buttons .week-btn {
+  background-color: #f4dbd4;
+  color: black;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.header-section .last-week-group .date-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.header-section .last-week-group .date-inputs .date-input {
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  min-width: 150px;
+  margin-top: 0.5rem;
+}
+
+/* Card Styles */
+.metrics-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  /* Responsive layout */
+}
+.metrics-section .card-spacing {
+  width: 100%;
+  /* Let cards take full width */
+  max-width: 269px;
+  /* Set a max-width for larger screens */
+  height: 163px;
+  background: #f4dbd4;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  flex-shrink: 0;
+  /* Prevent shrinking */
+}
+.metrics-section .card-spacing h3 {
+  color: #d9534f;
+}
+.metrics-section .card-spacing .value-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #ff7f5c;
+}
+.metrics-section .card-spacing .value-text .triangle {
+  color: #ff7f5c;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #3d5161;
+  margin-left: 0.25rem;
+}
+
+/* Additional Rows Under Cards */
+.additional-rows {
+  margin-top: 1.5rem;
+}
+.additional-rows .custom-row {
+  margin-bottom: 1rem;
+  /* Add space between rows */
+}
+.additional-rows .custom-row .station-info {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  /* Optional: Max-width for better control */
+}
+.additional-rows .custom-row .station-logo {
+  margin-right: 1rem;
+}
+.additional-rows .custom-row .station-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.additional-rows .custom-row .sales-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+.additional-rows .custom-row .sales-info div {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom Styles for Flexbox Layout */
+.custom-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive Breakpoint for Mobile */
+@media (max-width: 768px) {
+  .container-fluid {
+    height: auto;
+    /* Allow for dynamic height on smaller screens */
+    padding: 0.5rem;
+  }
+
+  .metrics-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-spacing {
+    width: 90%;
+    /* Let cards take up most of the width */
+    margin-bottom: 1rem;
+  }
+
+  .custom-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

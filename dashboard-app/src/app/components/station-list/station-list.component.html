@@ -1,0 +1,65 @@
+<div class="dashboard">
+  <!-- Header Section -->
+  <div class="header d-flex justify-content-between align-items-center">
+    <div class="monitored-stations">
+      <span>2/3 Monitored Stations</span>
+      <span>Last Update: 20s</span>
+    </div>
+    <div class="date-filter d-flex">
+      <button class="btn btn-date active">Today</button>
+      <button class="btn btn-date">Yesterday</button>
+      <button class="btn btn-date">Last Week</button>
+      <!-- Date Pickers -->
+      <input type="date" placeholder="Start date" />
+      <input type="date" placeholder="End date" />
+    </div>
+  </div>
+
+  <!-- Key Metrics Section -->
+  <div class="metrics d-flex justify-content-around">
+    <div class="metric-box total-value">
+      <p>71,028 EGP</p>
+      <span>Total Value</span>
+    </div>
+    <div class="metric-box total-sales">
+      <p>20,000 m³</p>
+      <span>Total Sales</span>
+    </div>
+    <div class="metric-box avg-sales">
+      <p>20,000 m³</p>
+      <span>Avg Sales</span>
+    </div>
+    <div class="metric-box transaction-count">
+      <p>1567</p>
+      <span>Total Transaction Count</span>
+    </div>
+  </div>
+
+  <!-- Graph and List Toggle Section -->
+  <div class="graph-list-toggle d-flex justify-content-center">
+    <button class="btn btn-toggle active">Graph</button>
+    <button class="btn btn-toggle">List</button>
+  </div>
+
+  <!-- Stations List Section -->
+  <div class="stations-list">
+    <div class="station-item" >
+      <div class="station-header d-flex justify-content-between align-items-center">
+        <p class="station-name">STATION NAME DUMMY</p>
+        <button class="btn btn-options">...</button>
+      </div>
+      <div class="station-info">
+        <p>Total Sales: <span>62,721 m³</span></p>
+        <p>Compression State: <span>Compression</span></p>
+        <!-- More fields as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Sales and Hourly Sales Graphs Section -->
+  <div class="graphs">
+    <!-- Graphs can be implemented with Chart.js or similar -->
+    <div class="hourly-sales-chart">Hourly Sales Graph</div>
+    <div class="sales-by-station">Sales by Station</div>
+  </div>
+</div>
